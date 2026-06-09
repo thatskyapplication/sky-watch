@@ -1,0 +1,23 @@
+{
+	"name": "sky-watch",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"test": "tsc",
+		"lint": "biome check",
+		"format": "biome check --write",
+		"check": "node source/index.ts",
+		"knip": "knip"
+	},
+	"dependencies": {
+		"@actions/core": "^1.11.1",
+		"diff": "^8.0.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.11",
+		"@types/node": "^24.12.4",
+		"knip": "^6.16.1",
+		"typescript": "^6.0.3"
+	},
+	"packageManager": "pnpm@11.0.9"
+}
