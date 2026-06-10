@@ -61,5 +61,5 @@ jobs:
             exit 0
           fi
 
-          git commit --message "chore: Update snapshots"
+          git commit --message "chore: update snapshots"
           git push origin "HEAD:$REF_NAME"
