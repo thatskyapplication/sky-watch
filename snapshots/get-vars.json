@@ -1,4 +1,5 @@
 {
+	"dye_pickup_cap": 3960,
 	"ab_mainstreet_balance": 0,
 	"ab_mainstreet_enabled": 1,
 	"affinity_line_of_sight_mode": 1,
@@ -36,7 +37,6 @@
 	"diving_time": 60,
 	"dye_forge_cost": 40,
 	"dye_menu_scroll_increments": 1,
-	"dye_pickup_cap": 3960,
 	"emote_favorites_show_delay": 225,
 	"enable_afk_wax_pickups": 0,
 	"enable_ap24_extras": 1,
@@ -96,7 +96,7 @@
 	"enable_recording_candle": 1,
 	"enable_resource_sync": 1,
 	"enable_shared_space_challenges": 1,
-	"enable_sound_analytics": 1,
+	"enable_sound_analytics": 0,
 	"enable_speech_to_chat": 1,
 	"enable_spell_categories": 1,
 	"enable_stage": 1,
