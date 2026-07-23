@@ -1,8 +1,8 @@
 {
+	"afk_time": 120,
 	"ab_mainstreet_balance": 0,
 	"ab_mainstreet_enabled": 1,
 	"affinity_line_of_sight_mode": 1,
-	"afk_time": 120,
 	"analytics_charge_interval": 2,
 	"analytics_ping_distance": 10,
 	"analytics_ping_interval": 30,
