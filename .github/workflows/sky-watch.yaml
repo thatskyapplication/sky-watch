@@ -44,7 +44,7 @@ jobs:
         run: node source/index.ts
         env:
           INPUT_DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          INPUT_SKY_BUILD_ACCESS_KEY: ${{ secrets.SKY_BUILD_ACCESS_KEY }}
+          INPUT_SKY_BUILD_ACCESS_KEY: ${{ vars.SKY_BUILD_ACCESS_KEY }}
           INPUT_SKY_USER_AGENT: ${{ vars.SKY_USER_AGENT }}
 
       - name: Commit snapshot changes
