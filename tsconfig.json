@@ -13,6 +13,7 @@
 		"allowImportingTsExtensions": true,
 		"resolveJsonModule": true,
 		"verbatimModuleSyntax": true,
+		"erasableSyntaxOnly": true,
 		"noEmit": true,
 		"newLine": "lf",
 		"rootDir": "source",
