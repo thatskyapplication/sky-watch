@@ -1,0 +1,235 @@
+{
+	"04573ef8-e64a-4793-bc97-f591f7088db5": {
+		"dates": {
+			"recurring-1793054041506-rqiat59m0": {
+				"end": "2026-12-04T08:00:00.000Z",
+				"start": "2026-12-02T08:00:00.000Z"
+			}
+		},
+		"description": "Enjoy some light when you visit the special event in the Aviary Village Cafe.",
+		"location": "Aviary Village",
+		"schedule": null,
+		"special": true,
+		"title": "Aviary Village Cafe"
+	},
+	"9d9b088d-dd2e-483c-b190-a000fd0311e8": {
+		"dates": {
+			"recurring-1793122112787-k2ajr8t0v": {
+				"end": null,
+				"start": "2026-12-18T08:00:00.000Z"
+			}
+		},
+		"description": "Enjoy the snowy fun through the realms during the Days of Feast.",
+		"location": "Aviary Village",
+		"schedule": null,
+		"special": true,
+		"title": "Days of Feast"
+	},
+	"dc3f9063-d42c-4697-9ded-b16f03d40486": {
+		"dates": {
+			"recurring-1793051990213-vd21fmob0": {
+				"end": "2026-11-12T08:00:00.000Z",
+				"start": "2026-11-07T08:00:00.000Z"
+			}
+		},
+		"description": "Venture through the dark for an adventure in the Cackling Crab.",
+		"location": "Aviary Village",
+		"schedule": null,
+		"special": true,
+		"title": "Days of Mischief"
+	},
+	"383ba569-8c7f-4bbc-891c-11ad5ad90a31": {
+		"dates": {
+			"recurring-1793055724120-wfec1q4fa": {
+				"end": "2026-12-11T08:00:00.000Z",
+				"start": "2026-11-27T08:00:00.000Z"
+			}
+		},
+		"description": "Travel through the realms and show your favorite outfits on the Style stage.",
+		"location": "Aviary Village",
+		"schedule": null,
+		"special": true,
+		"title": "Days of Style"
+	},
+	"c6fb0010-a731-43a6-8fb4-b9acdb11b852": {
+		"dates": {},
+		"description": "Collect Light from the Belonging Guide’s family table.",
+		"location": "Hidden Forest - Elevated Clearing",
+		"schedule": {
+			"durations": [
+				15
+			],
+			"times": [
+				"00:30",
+				"02:30",
+				"04:30",
+				"06:30",
+				"08:30",
+				"10:30",
+				"12:30",
+				"14:30",
+				"16:30",
+				"18:30",
+				"20:30",
+				"22:30"
+			],
+			"weekdays": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			]
+		},
+		"special": false,
+		"title": "Elevated Clearing"
+	},
+	"ff19949e-c7b5-4f7a-9101-243038ac4fa9": {
+		"dates": {},
+		"description": "Help the community reach its goal by visiting the Office rooftop krill! Check your inbox for more details! ",
+		"location": "Aviary Village",
+		"schedule": null,
+		"special": true,
+		"title": "Hug the Office Krill"
+	},
+	"6d2db094-c4cd-4e4f-8e55-0197082eaf8f": {
+		"dates": {},
+		"description": "A chance for you to share a broadcasted moment with staff and players alike",
+		"location": "Aviary Village",
+		"schedule": {
+			"durations": [
+				60
+			],
+			"times": [
+				"16:30"
+			],
+			"weekdays": [
+				"Tuesday",
+				"Thursday"
+			]
+		},
+		"special": true,
+		"title": "Player Interviews"
+	},
+	"c685da7d-629f-43e1-af8b-77529a7ce337": {
+		"dates": {},
+		"description": "Burn dark Corruption at the Sanctuary Islands geyser.",
+		"location": "Daylight Prairie - Sanctuary Islands",
+		"schedule": {
+			"durations": [
+				15
+			],
+			"times": [
+				"00:00",
+				"02:00",
+				"04:00",
+				"06:00",
+				"08:00",
+				"10:00",
+				"12:00",
+				"14:00",
+				"16:00",
+				"18:00",
+				"20:00",
+				"22:00"
+			],
+			"weekdays": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			]
+		},
+		"special": false,
+		"title": "Sanctuary Geyser"
+	},
+	"5c32ad99-19a2-42e8-a535-1c7c6a2e8661": {
+		"dates": {},
+		"description": "Collect Light from the Islands’ deep water light creatures.",
+		"location": "Daylight Prairie - Sanctuary Islands",
+		"schedule": {
+			"durations": [
+				10
+			],
+			"times": [
+				"00:50",
+				"02:50",
+				"04:50",
+				"06:50",
+				"08:50",
+				"10:50",
+				"12:50",
+				"14:50",
+				"16:50",
+				"18:50",
+				"20:50",
+				"22:50"
+			],
+			"weekdays": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			]
+		},
+		"special": false,
+		"title": "Sanctuary Turtle"
+	},
+	"40b8ee68-40af-4841-93a4-1a2ab2733e1d": {
+		"dates": {},
+		"description": "Join TGC staff in a casual run through the Eye of Eden.",
+		"location": "Eden hub - “Main Door”",
+		"schedule": {
+			"durations": [
+				60
+			],
+			"times": [
+				"17:00"
+			],
+			"weekdays": [
+				"Friday"
+			]
+		},
+		"special": false,
+		"title": "TGC Eden Run"
+	},
+	"6bc2ad2a-11e1-4ebb-92f6-a5cfbfaf0034": {
+		"dates": {},
+		"description": "Take to the ice and collect Light with the young skater in the Village of Dreams.",
+		"location": "Valley of Triumph - Village of Dreams",
+		"schedule": {
+			"durations": [
+				15
+			],
+			"times": [
+				"00:00",
+				"02:00",
+				"04:00",
+				"06:00",
+				"08:00",
+				"10:00",
+				"12:00",
+				"14:00",
+				"16:00",
+				"18:00",
+				"20:00",
+				"22:00"
+			],
+			"weekdays": [
+				"Friday",
+				"Saturday",
+				"Sunday"
+			]
+		},
+		"special": false,
+		"title": "Village Ice Rink"
+	}
+}
