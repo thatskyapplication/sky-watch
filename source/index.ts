@@ -2,6 +2,11 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { getInput, info, summary, warning } from "@actions/core";
 import { diffLines } from "diff";
+import {
+	fetchStarboardCalendar,
+	fetchStarboardNews,
+	fetchStarboardPatchNotes,
+} from "./starboard.ts";
 import { MAXIMUM_CONTENT_LENGTH } from "./utility/constants.ts";
 import { isRecord, prettyJSON } from "./utility/functions.ts";
 
@@ -137,14 +142,11 @@ async function sendDiscordMessage(content: string) {
 	}
 }
 
-async function checkSnapshot(
-	name: string,
-	snapshot: string,
-	newValue: Record<string, unknown>,
-): Promise<SnapshotCheckResult> {
+async function checkSnapshot(endpoint: Endpoint): Promise<SnapshotCheckResult> {
+	const { name, snapshot } = endpoint;
 	const snapshotPath = join("snapshots", snapshot);
 	const oldValue = await readSnapshot(snapshotPath);
-	const newJSON = prettyJSON(newValue);
+	const newJSON = prettyJSON(await endpoint.fetch(oldValue));
 
 	if (oldValue === null) {
 		await writeSnapshot(snapshotPath, newJSON);
@@ -194,7 +196,7 @@ function getErrorMessage(error: unknown) {
 }
 
 interface Endpoint {
-	fetch(): Promise<Record<string, unknown>>;
+	fetch(previous: Record<string, unknown> | null): Promise<Record<string, unknown>>;
 	name: string;
 	snapshot: string;
 }
@@ -206,18 +208,29 @@ const ENDPOINTS = [
 		name: "/account/get_latest_build_version",
 		snapshot: "get-latest-build-version.json",
 	},
+	{
+		fetch: fetchStarboardCalendar,
+		name: "Starboard calendar",
+		snapshot: "starboard-calendar.json",
+	},
+	{
+		fetch: fetchStarboardPatchNotes,
+		name: "Starboard patch notes",
+		snapshot: "starboard-patch-notes.json",
+	},
+	{ fetch: fetchStarboardNews, name: "Starboard news", snapshot: "starboard-news.json" },
 ] as const satisfies readonly Endpoint[];
 
 const results = await Promise.all(
-	ENDPOINTS.map<Promise<EndpointResult>>(async ({ fetch, name, snapshot }) => {
+	ENDPOINTS.map<Promise<EndpointResult>>(async (endpoint) => {
 		try {
-			return await checkSnapshot(name, snapshot, await fetch());
+			return await checkSnapshot(endpoint);
 		} catch (error) {
 			return {
 				changed: false,
 				error: getErrorMessage(error),
-				name,
-				snapshot,
+				name: endpoint.name,
+				snapshot: endpoint.snapshot,
 				status: "failed",
 			};
 		}
