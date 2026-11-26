@@ -68,7 +68,7 @@ async function fetchStarboard(path: string, query: Record<string, string> = {}) 
 		throw new Error(`${path} returned no items.`);
 	}
 
-	return data;
+	return data as unknown[];
 }
 
 function parseCalendarOccurrences(series: unknown) {
